@@ -12,9 +12,9 @@ authors:
 - Oliver Kohlbacher
 - Tilmann Weber
 date: '2023-05-01'
-publishDate: '2024-11-27T20:04:27.577938Z'
+publishDate: '2024-11-27T20:57:26.933198Z'
 publication_types:
-- article-journal
+- 2
 publication: '*J. Cheminform.*'
 abstract: Metabolomics experiments generate highly complex datasets, which are time
   and work-intensive, sometimes even error-prone if inspected manually. Therefore,

@@ -15,9 +15,9 @@ authors:
 - Bernhard Ø Palsson
 - Tilmann Weber
 date: '2024-07-01'
-publishDate: '2024-11-27T20:04:27.600705Z'
+publishDate: '2024-11-27T20:57:26.953963Z'
 publication_types:
-- article-journal
+- 2
 publication: '*Nucleic Acids Res.*'
 abstract: 'Filamentous Actinobacteria, recently renamed Actinomycetia, are the most
   prolific source of microbial bioactive natural products. Studies on biosynthetic

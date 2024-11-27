@@ -8,9 +8,9 @@ authors:
 - Bernhard O Palsson
 - Tilmann Weber
 date: '2024-06-01'
-publishDate: '2024-11-27T20:04:27.568219Z'
+publishDate: '2024-11-27T20:57:26.924850Z'
 publication_types:
-- article-journal
+- 2
 publication: '*Nucleic Acids Res.*'
 abstract: 'Genome mining is revolutionizing natural products discovery efforts. The
   rapid increase in available genomes demands comprehensive computational platforms

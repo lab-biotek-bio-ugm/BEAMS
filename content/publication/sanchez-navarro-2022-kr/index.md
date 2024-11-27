@@ -12,9 +12,9 @@ authors:
 - Tilmann Weber
 - Caitlin M Singleton
 date: '2022-12-01'
-publishDate: '2024-11-27T20:04:27.585529Z'
+publishDate: '2024-11-27T20:57:26.940043Z'
 publication_types:
-- article-journal
+- 2
 publication: '*mSystems*'
 abstract: Microorganisms produce a wide variety of secondary/specialized metabolites
   (SMs), the majority of which are yet to be discovered. These natural products play

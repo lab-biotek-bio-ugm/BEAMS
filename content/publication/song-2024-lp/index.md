@@ -16,9 +16,9 @@ authors:
 - Tilmann Weber
 - Ákos T Kovács
 date: '2024-04-01'
-publishDate: '2024-11-27T20:04:27.593630Z'
+publishDate: '2024-11-27T20:57:26.947620Z'
 publication_types:
-- article-journal
+- 2
 publication: '*bioRxiv*'
 abstract: AbstractThis study showcases 121 new genomes of spore-formingBacillalesfrom
   strains collected globally from a variety of habitats, assembled using Oxford Nanopore
