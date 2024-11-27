@@ -14,7 +14,7 @@ tags:
 - 'lecture'
 categories: []
 date: '2024-02-16'
-lastmod: ''
+lastmod: '2024-11-27T20:04:27.593630Z'
 featured: false
 draft: false
 
