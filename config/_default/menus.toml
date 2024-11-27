@@ -10,31 +10,31 @@
 
 [[main]]
   name = "People"
-  url = "/People"
+  url = "People"
   identifier = "people"
   weight = 20
 
   [[main]]
   name = "Research"
-  url = "/research"
+  url = "research"
   weight = 30
   identifier = "research-id"
 
 [[main]]
   name = "Publications"
-  url = "/publication"
+  url = "publication"
   weight = 50
   identifier = "Publications"
 
 [[main]]
   name = "Tools"
-  url = "/tools"
+  url = "tools"
   weight = 60
   identifier = "tools-id"
 
 [[main]]
   name = "Teaching"
-  url = "/courses"
+  url = "courses"
   weight = 70  
 
 [[main]]
