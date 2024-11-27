@@ -1,0 +1,220 @@
+@ARTICLE{Nuhamunada2024-it,
+  title     = "{BGCFlow}: systematic pangenome workflow for the analysis of
+               biosynthetic gene clusters across large genomic datasets",
+  author    = "Nuhamunada, Matin and Mohite, Omkar S and Phaneuf, Patrick V and
+               Palsson, Bernhard O and Weber, Tilmann",
+  journal   = "Nucleic Acids Res.",
+  publisher = "Oxford University Press (OUP)",
+  volume    =  52,
+  number    =  10,
+  pages     = "5478--5495",
+  abstract  = "Genome mining is revolutionizing natural products discovery
+               efforts. The rapid increase in available genomes demands
+               comprehensive computational platforms to effectively extract
+               biosynthetic knowledge encoded across bacterial pangenomes. Here,
+               we present BGCFlow, a novel systematic workflow integrating
+               analytics for large-scale genome mining of bacterial pangenomes.
+               BGCFlow incorporates several genome analytics and mining tools
+               grouped into five common stages of analysis such as: (i) data
+               selection, (ii) functional annotation, (iii) phylogenetic
+               analysis, (iv) genome mining, and (v) comparative analysis.
+               Furthermore, BGCFlow provides easy configuration of different
+               projects, parallel distribution, scheduled job monitoring, an
+               interactive database to visualize tables, exploratory Jupyter
+               Notebooks, and customized reports. Here, we demonstrate the
+               application of BGCFlow by investigating the phylogenetic
+               distribution of various biosynthetic gene clusters detected
+               across 42 genomes of the Saccharopolyspora genus, known to
+               produce industrially important secondary/specialized metabolites.
+               The BGCFlow-guided analysis predicted more accurate dereplication
+               of BGCs and guided the targeted comparative analysis of selected
+               RiPPs. The scalable, interoperable, adaptable, re-entrant, and
+               reproducible nature of the BGCFlow will provide an effective
+               novel way to extract the biosynthetic knowledge from the
+               ever-growing genomic datasets of biotechnologically relevant
+               bacterial species.",
+  month     =  jun,
+  year      =  2024,
+  language  = "en"
+}
+
+@ARTICLE{Kontou2023-jc,
+  title    = "{UmetaFlow}: an untargeted metabolomics workflow for
+              high-throughput data processing and analysis",
+  author   = "Kontou, Eftychia E and Walter, Axel and Alka, Oliver and Pfeuffer,
+              Julianus and Sachsenberg, Timo and Mohite, Omkar S and Nuhamunada,
+              Matin and Kohlbacher, Oliver and Weber, Tilmann",
+  journal  = "J. Cheminform.",
+  volume   =  15,
+  number   =  1,
+  pages    =  52,
+  abstract = "Metabolomics experiments generate highly complex datasets, which
+              are time and work-intensive, sometimes even error-prone if
+              inspected manually. Therefore, new methods for automated, fast,
+              reproducible, and accurate data processing and dereplication are
+              required. Here, we present UmetaFlow, a computational workflow for
+              untargeted metabolomics that combines algorithms for data
+              pre-processing, spectral matching, molecular formula and
+              structural predictions, and an integration to the GNPS workflows
+              Feature-Based Molecular Networking and Ion Identity Molecular
+              Networking for downstream analysis. UmetaFlow is implemented as a
+              Snakemake workflow, making it easy to use, scalable, and
+              reproducible. For more interactive computing, visualization, as
+              well as development, the workflow is also implemented in Jupyter
+              notebooks using the Python programming language and a set of
+              Python bindings to the OpenMS algorithms (pyOpenMS). Finally,
+              UmetaFlow is also offered as a web-based Graphical User Interface
+              for parameter optimization and processing of smaller-sized
+              datasets. UmetaFlow was validated with in-house LC-MS/MS datasets
+              of actinomycetes producing known secondary metabolites, as well as
+              commercial standards, and it detected all expected features and
+              accurately annotated 76\% of the molecular formulas and 65\% of
+              the structures. As a more generic validation, the publicly
+              available MTBLS733 and MTBLS736 datasets were used for
+              benchmarking, and UmetaFlow detected more than 90\% of all ground
+              truth features and performed exceptionally well in quantification
+              and discriminating marker selection. We anticipate that UmetaFlow
+              will provide a useful platform for the interpretation of large
+              metabolomics datasets.",
+  month    =  may,
+  year     =  2023,
+  keywords = "Analysis; High-throughput workflow; Processing; Software;
+              Untargeted metabolomics",
+  language = "en"
+}
+
+@ARTICLE{Sanchez-Navarro2022-kr,
+  title     = "Long-read metagenome-assembled genomes improve identification of
+               novel complete biosynthetic gene clusters in a complex microbial
+               activated sludge ecosystem",
+  author    = "Sánchez-Navarro, Roberto and Nuhamunada, Matin and Mohite, Omkar
+               S and Wasmund, Kenneth and Albertsen, Mads and Gram, Lone and
+               Nielsen, Per H and Weber, Tilmann and Singleton, Caitlin M",
+  journal   = "mSystems",
+  publisher = "American Society for Microbiology",
+  volume    =  7,
+  number    =  6,
+  pages     = "e0063222",
+  abstract  = "Microorganisms produce a wide variety of secondary/specialized
+               metabolites (SMs), the majority of which are yet to be
+               discovered. These natural products play multiple roles in
+               microbiomes and are important for microbial competition,
+               communication, and success in the environment. SMs have been our
+               major source of antibiotics and are used in a range of
+               biotechnological applications. In silico mining for biosynthetic
+               gene clusters (BGCs) encoding the production of SMs is commonly
+               used to assess the genetic potential of organisms. However, as
+               BGCs span tens to over 200 kb, identifying complete BGCs requires
+               genome data that has minimal assembly gaps within the BGCs, a
+               prerequisite that was previously only met by individually
+               sequenced genomes. Here, we assess the performance of the
+               currently available genome mining platform antiSMASH on 1,080
+               high-quality metagenome-assembled bacterial genomes (HQ MAGs)
+               previously produced from wastewater treatment plants (WWTPs)
+               using a combination of long-read (Oxford Nanopore) and short-read
+               (Illumina) sequencing technologies. More than 4,200 different
+               BGCs were identified, with 88\% of these being complete. Sequence
+               similarity clustering of the BGCs implies that the majority of
+               this biosynthetic potential likely encodes novel compounds, and
+               few BGCs are shared between genera. We identify BGCs in abundant
+               and functionally relevant genera in WWTPs, suggesting a role of
+               secondary metabolism in this ecosystem. We find that the assembly
+               of HQ MAGs using long-read sequencing is vital to explore the
+               genetic potential for SM production among the uncultured members
+               of microbial communities. IMPORTANCE Cataloguing secondary
+               metabolite (SM) potential using genome mining of metagenomic data
+               has become the method of choice in bioprospecting for novel
+               compounds. However, accurate biosynthetic gene cluster (BGC)
+               detection requires unfragmented genomic assemblies, which have
+               been technically difficult to obtain from metagenomes until very
+               recently with new long-read technologies. Here, we determined the
+               biosynthetic potential of activated sludge (AS), the microbial
+               community used in resource recovery and wastewater treatment, by
+               mining high-quality metagenome-assembled genomes generated from
+               long-read data. We found over 4,000 BGCs, including BGCs in
+               abundant process-critical bacteria, with no similarity to the
+               BGCs of characterized products. We show how long-read MAGs are
+               required to confidently assemble complete BGCs, and we determined
+               that the AS BGCs from different studies have very little overlap,
+               suggesting that AS is a rich source of biosynthetic potential and
+               new bioactive compounds.",
+  month     =  dec,
+  year      =  2022,
+  keywords  = "activated sludge; biosynthetic gene cluster; metagenome-assembled
+               genome; secondary metabolite; wastewater treatment plant",
+  language  = "en"
+}
+
+@ARTICLE{Song2024-lp,
+  title    = "Expanding the genome information on \textit{Bacillales}for
+              biosynthetic gene cluster discovery",
+  author   = "Song, Lijie and Dyrbye Nielsen, Lasse Johan and Xu, Xinming and
+              Mohite, Omkar Satyavan and Nuhamunada, Matin and Xu, Zhihui and
+              Murphy, Rob and Bodawatta, Kasun and Poulsen, Michael and Abdulla,
+              Mohamed Hatha and Sonnenschein, Eva C and Weber, Tilmann and
+              Kovács, Ákos T",
+  journal  = "bioRxiv",
+  pages    = "2024.04.24.590912",
+  abstract = "AbstractThis study showcases 121 new genomes of
+              spore-formingBacillalesfrom strains collected globally from a
+              variety of habitats, assembled using Oxford Nanopore long-read and
+              MGI short-read sequences.Bacilliare renowned for their capacity to
+              produce diverse secondary metabolites with use in agriculture,
+              biotechnology, and medicine. These secondary metabolites are
+              encoded within biosynthetic gene clusters (smBGCs). smBGCs have
+              significant research interest due to their potential for the
+              discovery of new bioactivate compounds. Our dataset includes 62
+              complete genomes, 2 at chromosome level, and 57 at contig level,
+              covering a genomic size range from 3.50 Mb to 7.15 Mb.
+              Phylotaxonomic analysis revealed that these genomes span 16
+              genera, with 69 of them belonging toBacillus. A total of 1,176
+              predicted BGCs were identified byin silicogenome mining. We
+              anticipate that the open-access data presented here will expand
+              the reported genomic information of spore-formingBacillalesand
+              facilitate a deeper understanding of the genetic basis
+              ofBacillales’ potential for secondary metabolite production.",
+  month    =  apr,
+  year     =  2024,
+  language = "en"
+}
+
+@ARTICLE{Jorgensen2024-lt,
+  title     = "A treasure trove of 1034 actinomycete genomes",
+  author    = "Jørgensen, Tue Sparholt and Mohite, Omkar S and Sterndorff, Eva B
+               and Alvarez-Arevalo, Maria and Blin, Kai and Booth, Thomas J and
+               Charusanti, Pep and Faurdal, David and Hansen, Troels Ø and
+               Nuhamunada, Matin and Mourched, Anna-Sophie and Palsson, Bernhard
+               Ø and Weber, Tilmann",
+  journal   = "Nucleic Acids Res.",
+  publisher = "Oxford University Press (OUP)",
+  volume    =  52,
+  number    =  13,
+  pages     = "7487--7503",
+  abstract  = "Filamentous Actinobacteria, recently renamed Actinomycetia, are
+               the most prolific source of microbial bioactive natural products.
+               Studies on biosynthetic gene clusters benefit from or require
+               chromosome-level assemblies. Here, we provide DNA sequences from
+               >1000 isolates: 881 complete genomes and 153 near-complete
+               genomes, representing 28 genera and 389 species, including 244
+               likely novel species. All genomes are from filamentous isolates
+               of the class Actinomycetia from the NBC culture collection. The
+               largest genus is Streptomyces with 886 genomes including 742
+               complete assemblies. We use this data to show that analysis of
+               complete genomes can bring biological understanding not
+               previously derived from more fragmented sequences or less
+               systematic datasets. We document the central and structured
+               location of core genes and distal location of specialized
+               metabolite biosynthetic gene clusters and duplicate core genes on
+               the linear Streptomyces chromosome, and analyze the content and
+               length of the terminal inverted repeats which are characteristic
+               for Streptomyces. We then analyze the diversity of trans-AT
+               polyketide synthase biosynthetic gene clusters, which encodes the
+               machinery of a biotechnologically highly interesting compound
+               class. These insights have both ecological and biotechnological
+               implications in understanding the importance of high quality
+               genomic resources and the complex role synteny plays in
+               Actinomycetia biology.",
+  month     =  jul,
+  year      =  2024,
+  language  = "en"
+}

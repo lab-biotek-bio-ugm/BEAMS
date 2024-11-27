@@ -1,48 +1,90 @@
-# [Hugo Research Group Theme](https://github.com/wowchemy/starter-hugo-research-group)
+# Best-practices documentation for modifying the website
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
+## Website editting
 
-The **Research Group Template** empowers your research group to easily create a beautiful website with a stunning homepage, news, academic publications, events, team profiles, and a contact form.
+* Follow instructions on [this page](https://wowchemy.com/docs/install-locally/) to install hugo and dependencies
+* cd into a directory you want to have the file in
+* git clone https://github.com/MyersResearchGroup/myersresearchgroup.github.io.git
+* cd into the myersresearchgroup folder
+* hugo server
+* Check it is up and running at localhost:1313
+* Install the text editor of your choice
+* Create branch for the repository and open the branch in vs code
+* Page about website structure: https://wowchemy.com/docs/get-started/
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## Website Structure Overview
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+* The general file structure looks like this: https://wowchemy.com/docs/get-started/#remove-any-unused-example-pages
+* You can figure out which folders correspond to which tabs on the menu by looking at menus.toml under config\_default
+  * for example the "People" tab can be accessed via <website url>/People-Genetic-Logic-Lab and the web code for the content of the page is found under content/People-Genetic-Logic-Lab
+* Individual webpages are built using the index.md or _index.md file in the content folder. There are two types of index file:
+  * _index.md: it is a simple functionality that displays the rest of the content from the folder based on the view style chosen. It is flanked by "---" at the start and end of the file. Example:
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+~~~~
+---
+title: Publications
+# View.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+#   4 = Citation
+view: 1
+# Optional header image (relative to `static/media/` folder).
+header:
+  caption: ""
+  image: ""
+---
+~~~~
+  
+  * index.md: It is a widget page (A page that will include widgets). The page is flanked by "+++" at the top and bottom. Example:
 
-[Check out the latest demo](https://research-group.netlify.app/) of what you'll get in less than 60 seconds, or [view the showcase](https://hugoblox.com/creators/).
+ ~~~~
++++
+# People
+type = "widget_page"
+headless = false  # Homepage is headless, other widget pages are not.
++++
+ ~~~~
 
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+* Widgets
 
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+  Widgets are functions which take in parameters and generate html code accordingly. There are 3 parts to a widget:
 
-## We ask you, humbly, to support this open source movement
+  **Widget Call:** This is an .md file in the directory where the widget is being called. E.g. publications.md in the home directory under content. It is flanked by "+++" and contains the name of the widget being called (in the example case pages), provides a series of parameters for the function to work (headless, active, weight, title, subtitle) and widget specific parameters (content.filters, design, design.background, custom css). For examples of the widget call function for each of the different widgets see /themes/academic/exampleSite/content/home and open any of the .md files other than index.
 
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
+  **Widget Function:** A widget function is called based on the widget parameter in the widget call. The widget is code (Go's html/template and text/template libraries) interspersed with code to build it (you have functionality like if statements, loops, etc, for more info see: https://gohugo.io/templates/introduction/). There are two locations where the widgets are found: /themes/academic/layouts/partials/widgets or any custom widgets are found in layouts/partials/widgets
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+  **Widget Data:** The widget may not have anymore data than the parameters provided in the widget call (this is the case for widgets like featurette) or they might link out to get more information (for example the people widget obtains its information by looping through all authors files and filling in the template using the information provided in the author's index file e.g. Chris Myers/_index.md)
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
+* Partials
 
-## Demo credits
+  Widgets are a subset of partials. Partials are html files that contain go code and are used to provide the general structure of the web page, e.g the navbar, the citation views, page footer etc. You can go in and edit them too but I suggest leaving them alone for now
 
-Please replace the demo images with your own.
+* Images
 
-- [Female scientist](https://unsplash.com/photos/uVnRa6mOLOM)
-- [2 Coders](https://unsplash.com/photos/kwzWjTnDPLk)
-- [Cafe](https://unsplash.com/photos/RnDGGnMEOao)
-- Blog posts
-  - https://unsplash.com/photos/AndE50aaHn4
-  - https://unsplash.com/photos/OYzbqk2y26c
-- Avatars
-  - https://unsplash.com/photos/5yENNRbbat4
-  - https://unsplash.com/photos/WNoLnJo7tS8
+  Any image files not associated with authors should go in the static\media file. It can be called in an html image tag using "/media/example.png"
+
+  Author images go in the file associated with the author and must be named avatar.<extension> e.g. avatar.png or avatar.jpg
+
+* CSS
+
+  like most website there are css files. You can go in and edit them to change the way the page appears. Better practice is to use the file for custom scss located under themes\academic\assests\scss\custom.scss. Be careful overriding anything in here as it can drastically affect the way widgets works
+
+## How To's:
+
+* **Import new references**: 
+  For this, please install and use the [Academic Import](https://github.com/wowchemy/hugo-academic-cli/#usage) (for alternate instructions see https://wowchemy.com/docs/managing-content/#create-a-publication) command to import new references into the webpage. Please make sure to use the `--overwrite` (to avoid reference duplicates) flags when importing references using the academic import command. Check out https://github.com/wowchemy/hugo-academic-cli/#usage for more information.
+  
+ NB: currently use this command to run academic import to ensure no additional quotes are added to tags `pip3 install -U git+https://github.com/wowchemy/hugo-academic-cli.git`
+ 
+ If that isn't working tags can be cleaned up using the cleanup_hugo_tagging.py script (make sure the path is to the publications folder) to clean up the extra "" in tags.
+
+  Talking about tags, [Academic Import](https://github.com/wowchemy/hugo-academic-cli/#usage) will automatically generate tags for all references imported, created from a mixture of keywords and titles extracted from the bib information. However, sometimes this can go haywire and add weird tags. If any tag has a *"."* or a *"?"* or any other non-alphanumerical value, the site won't build. Please make sure you remove all characters that are not alpha-numerical from tags to run correctly.
+
+* How the contact form works:
+
+Current contact form is sent through formspree.io. The emails can be found in the geneticlogiclab@gmail.com email. The email inbox is heavily filtered, so the emails should appear in the All Mail folder or the Updates folder.
+
+## Common error and mistakes
+
+* Folders **must not** have any spaces. Use web-friendly hyphens instead.
