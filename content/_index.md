@@ -26,16 +26,13 @@ sections:
   - block: markdown
     content:
       title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
-    design:
-      columns: '1'
-  - block: markdown
-    content:
-      title:
       subtitle: ''
-      text:
+      text: |
+        <div style="display: flex; justify-content: center; align-items: center; min-height: 50vh;">
+          <a href="./people/" style="font-size: 1.5em; padding: 15px 30px; display: inline-block; margin-top: 50vh; text-align: center; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
+            Meet the team →
+          </a>
+        </div>
     design:
       columns: '1'
       background:
