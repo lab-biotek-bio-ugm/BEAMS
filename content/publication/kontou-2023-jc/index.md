@@ -1,6 +1,11 @@
 ---
 title: 'UmetaFlow: an untargeted metabolomics workflow for high-throughput data processing
   and analysis'
+
+# Authors
+# A YAML list of author names
+# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
+# write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
 - Eftychia E Kontou
 - Axel Walter
@@ -11,11 +16,27 @@ authors:
 - Matin Nuhamunada
 - Oliver Kohlbacher
 - Tilmann Weber
-date: '2023-05-01'
-publishDate: '2024-11-27T20:57:26.933198Z'
+
+# Author notes (such as 'Equal Contribution')
+# A YAML list of notes for each author in the above `authors` list
+author_notes: []
+
+date: '2023-05-12'
+
+# Date to publish webpage (NOT necessarily Bibtex publication's date).
+publishDate: '2024-11-28T05:49:19.685651Z'
+
+# Publication type.
+# A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- 2
-publication: '*J. Cheminform.*'
+- article-journal
+
+# Publication name and optional abbreviated publication name.
+publication: ''
+publication_short: '*Journal of Cheminformatics*'
+
+doi: 10.1186/s13321-023-00724-w
+
 abstract: Metabolomics experiments generate highly complex datasets, which are time
   and work-intensive, sometimes even error-prone if inspected manually. Therefore,
   new methods for automated, fast, reproducible, and accurate data processing and
@@ -37,6 +58,49 @@ abstract: Metabolomics experiments generate highly complex datasets, which are t
   features and performed exceptionally well in quantification and discriminating marker
   selection. We anticipate that UmetaFlow will provide a useful platform for the interpretation
   of large metabolomics datasets.
+
+# Summary. An optional shortened abstract.
+summary: ''
+
 tags:
-- Analysis; High-throughput workflow; Processing; Software; Untargeted metabolomics
+- Analysis
+- High-throughput workflow
+- Processing
+- Software
+- Untargeted metabolomics
+
+# Display this page in a list of Featured pages?
+featured: false
+
+# Links
+url_pdf: ''
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Custom links (uncomment lines below)
+# links:
+# - name: Custom Link
+#   url: http://example.org
+
+# Publication image
+# Add an image named `featured.jpg/png` to your page's folder then add a caption below.
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: []
+links:
+- name: URL
+  url: http://dx.doi.org/10.1186/s13321-023-00724-w
 ---

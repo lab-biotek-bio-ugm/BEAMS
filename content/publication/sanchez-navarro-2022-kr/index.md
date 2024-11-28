@@ -1,6 +1,11 @@
 ---
 title: Long-read metagenome-assembled genomes improve identification of novel complete
   biosynthetic gene clusters in a complex microbial activated sludge ecosystem
+
+# Authors
+# A YAML list of author names
+# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
+# write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
 - Roberto Sánchez-Navarro
 - Matin Nuhamunada
@@ -11,11 +16,27 @@ authors:
 - Per H Nielsen
 - Tilmann Weber
 - Caitlin M Singleton
-date: '2022-12-01'
-publishDate: '2024-11-27T20:57:26.940043Z'
+
+# Author notes (such as 'Equal Contribution')
+# A YAML list of notes for each author in the above `authors` list
+author_notes: []
+
+date: '2022-12-20'
+
+# Date to publish webpage (NOT necessarily Bibtex publication's date).
+publishDate: '2024-11-28T05:49:19.958281Z'
+
+# Publication type.
+# A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- 2
-publication: '*mSystems*'
+- article-journal
+
+# Publication name and optional abbreviated publication name.
+publication: '*American Society for Microbiology*'
+publication_short: '*mSystems*'
+
+doi: 10.1128/msystems.00632-22
+
 abstract: Microorganisms produce a wide variety of secondary/specialized metabolites
   (SMs), the majority of which are yet to be discovered. These natural products play
   multiple roles in microbiomes and are important for microbial competition, communication,
@@ -35,20 +56,50 @@ abstract: Microorganisms produce a wide variety of secondary/specialized metabol
   BGCs in abundant and functionally relevant genera in WWTPs, suggesting a role of
   secondary metabolism in this ecosystem. We find that the assembly of HQ MAGs using
   long-read sequencing is vital to explore the genetic potential for SM production
-  among the uncultured members of microbial communities. IMPORTANCE Cataloguing secondary
-  metabolite (SM) potential using genome mining of metagenomic data has become the
-  method of choice in bioprospecting for novel compounds. However, accurate biosynthetic
-  gene cluster (BGC) detection requires unfragmented genomic assemblies, which have
-  been technically difficult to obtain from metagenomes until very recently with new
-  long-read technologies. Here, we determined the biosynthetic potential of activated
-  sludge (AS), the microbial community used in resource recovery and wastewater treatment,
-  by mining high-quality metagenome-assembled genomes generated from long-read data.
-  We found over 4,000 BGCs, including BGCs in abundant process-critical bacteria,
-  with no similarity to the BGCs of characterized products. We show how long-read
-  MAGs are required to confidently assemble complete BGCs, and we determined that
-  the AS BGCs from different studies have very little overlap, suggesting that AS
-  is a rich source of biosynthetic potential and new bioactive compounds.
+  among the uncultured members of microbial communities.
+
+# Summary. An optional shortened abstract.
+summary: ''
+
 tags:
-- activated sludge; biosynthetic gene cluster; metagenome-assembled genome; secondary
-  metabolite; wastewater treatment plant
+- activated sludge
+- biosynthetic gene cluster
+- metagenome-assembled genome
+- secondary metabolite
+- wastewater treatment plant
+
+# Display this page in a list of Featured pages?
+featured: false
+
+# Links
+url_pdf: ''
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Custom links (uncomment lines below)
+# links:
+# - name: Custom Link
+#   url: http://example.org
+
+# Publication image
+# Add an image named `featured.jpg/png` to your page's folder then add a caption below.
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: []
+links:
+- name: URL
+  url: http://dx.doi.org/10.1128/msystems.00632-22
 ---

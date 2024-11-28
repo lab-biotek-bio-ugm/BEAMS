@@ -1,5 +1,10 @@
 ---
 title: A treasure trove of 1034 actinomycete genomes
+
+# Authors
+# A YAML list of author names
+# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
+# write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
 - Tue Sparholt Jørgensen
 - Omkar S Mohite
@@ -14,11 +19,27 @@ authors:
 - Anna-Sophie Mourched
 - Bernhard Ø Palsson
 - Tilmann Weber
-date: '2024-07-01'
-publishDate: '2024-11-27T20:57:26.953963Z'
+
+# Author notes (such as 'Equal Contribution')
+# A YAML list of notes for each author in the above `authors` list
+author_notes: []
+
+date: '2024-07-22'
+
+# Date to publish webpage (NOT necessarily Bibtex publication's date).
+publishDate: '2024-11-28T05:49:20.407494Z'
+
+# Publication type.
+# A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- 2
-publication: '*Nucleic Acids Res.*'
+- article-journal
+
+# Publication name and optional abbreviated publication name.
+publication: '*Oxford University Press (OUP)*'
+publication_short: '*Nucleic Acid Research*'
+
+doi: 10.1093/nar/gkae523
+
 abstract: 'Filamentous Actinobacteria, recently renamed Actinomycetia, are the most
   prolific source of microbial bioactive natural products. Studies on biosynthetic
   gene clusters benefit from or require chromosome-level assemblies. Here, we provide
@@ -37,4 +58,44 @@ abstract: 'Filamentous Actinobacteria, recently renamed Actinomycetia, are the m
   compound class. These insights have both ecological and biotechnological implications
   in understanding the importance of high quality genomic resources and the complex
   role synteny plays in Actinomycetia biology.'
+
+# Summary. An optional shortened abstract.
+summary: ''
+
+tags: []
+
+# Display this page in a list of Featured pages?
+featured: false
+
+# Links
+url_pdf: ''
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Custom links (uncomment lines below)
+# links:
+# - name: Custom Link
+#   url: http://example.org
+
+# Publication image
+# Add an image named `featured.jpg/png` to your page's folder then add a caption below.
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: []
+links:
+- name: URL
+  url: https://dx.doi.org/10.1093/nar/gkae523
 ---
