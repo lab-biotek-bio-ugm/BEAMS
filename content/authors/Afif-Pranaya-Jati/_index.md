@@ -45,6 +45,9 @@ education:
   - course: MS in Molecular Biology and Biotechnology
     institution: University of Groningen
     year: 2018
+  - course: PhD in Infection Program, Biomedicine Discovery Institute
+    institution: Monash University
+    year:
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
