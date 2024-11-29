@@ -10,7 +10,7 @@ sections:
       title: |
         BEAMS Lab
       image:
-        filename: old_logo.png
+        filename: old_logo_hero.png
       text: |
         <br>
         
