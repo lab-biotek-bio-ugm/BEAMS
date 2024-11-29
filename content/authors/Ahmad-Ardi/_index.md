@@ -38,7 +38,7 @@ education:
   courses:
   - course: BSc in Biology
     institution: Universitas Gadjah Mada
-    year: 2019
+    year: 2022
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons

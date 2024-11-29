@@ -8,8 +8,6 @@ weight: 810
 authors:
 - Afif-Pranaya-Jati
 
-avatar: https://matinnuhamunada.staff.ugm.ac.id/files/2018/11/image3721-150x150.png
-
 #Author Names (alternative spellings etc)
 names:
 - Afif Pranaya Jati

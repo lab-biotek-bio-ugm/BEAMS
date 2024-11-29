@@ -14,7 +14,7 @@ tags:
 - 'lecture'
 categories: []
 date: '2024-02-16'
-lastmod: '2024-11-27T20:04:27.593630Z'
+lastmod: '2024-02-16T20:04:27.593630Z'
 featured: false
 draft: false
 
@@ -33,5 +33,6 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+I was invited to give a talk about BGCFlow at the Friday Scientific Seminar hosted by the Pusat Riset Rekayasa Genetika BRIN.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HzuPx6pyA_U?si=c5dex5T4JOichHML" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
